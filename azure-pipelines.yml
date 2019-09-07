@@ -7,7 +7,7 @@ pool:
 steps:
 - script: |
     sudo apt-get update
-    sudo apt-get install -yy cdbs debhelper libgnomeui-dev scrollkeeper libxml-parser-perl libgcrypt-dev docbook-utils xmlto libglade2-dev
+    sudo apt-get install -yy --no-install-recommends cdbs debhelper libgnomeui-dev scrollkeeper libxml-parser-perl libgcrypt-dev docbook-utils xmlto libglade2-dev
   displayName: 'Installing dependencies'
 
 - script: |
